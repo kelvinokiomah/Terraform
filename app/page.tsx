@@ -1,7 +1,8 @@
+"use client";
+
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-// ✅ Fix added here
 const MotionDiv = motion.div as React.ElementType;
 
 export default function Home() {
@@ -30,3 +31,4 @@ export default function Home() {
     </main>
   );
 }
+``
