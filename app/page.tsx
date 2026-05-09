@@ -1,4 +1,4 @@
-import Link from "next/link";
+import JobCard from '../../components/JobCard'
 import { motion } from "framer-motion";
 
 export default function Home() {
