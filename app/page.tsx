@@ -1,4 +1,4 @@
-import JobCard from '../../components/JobCard'
+import JobCard from '../components/JobCard'
 import { motion } from "framer-motion";
 
 export default function Home() {
