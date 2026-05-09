@@ -19,17 +19,17 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: Terraform
+        working-directory: .
 
       - name: Build app
         run: npm run build
-        working-directory: Terraform
+        working-directory: .
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: Terraform
+          path: .
 
   deploy:
     runs-on: ubuntu-latest
