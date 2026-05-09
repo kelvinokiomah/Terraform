@@ -1,11 +1,13 @@
-import JobCard from '../components/JobCard'
 import { motion } from "framer-motion";
 import Link from "next/link";
+
+// ✅ Fix added here
+const MotionDiv = motion.div as React.ElementType;
 
 export default function Home() {
   return (
     <main className="flex flex-col justify-center items-center min-h-screen px-6">
-      <motion.div
+      <MotionDiv
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="text-center max-w-2xl"
@@ -24,7 +26,7 @@ export default function Home() {
         >
           Browse Jobs
         </Link>
-      </motion.div>
+      </MotionDiv>
     </main>
   );
 }
