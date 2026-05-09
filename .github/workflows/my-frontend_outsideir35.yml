@@ -26,11 +26,18 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: frontend
+        working-directory: Terraform
 
       - name: Build frontend
         run: npm run build
-        working-directory: frontend
+        working-directory: Terraform
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: node-app
+          path: Terraform
+
 
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
